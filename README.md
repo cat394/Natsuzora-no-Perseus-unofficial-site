@@ -1,3 +1,12 @@
-# unofficial-perseus-website
+# unofficial-perseus-website（夏空のペルセウス非公式・非公認ウェブサイトの制作）
 This is an unofficial and unofficial project that uses modern HTML and CSS to make the official website of Natsuzora no Perseus, a romance adventure game produced by minori, responsive.
 Minori holds all the copyrights of the materials used.
+
+現在、夏空のペルセウスの公式サイトはスマートフォンやタブレットなど画面幅のあまりないデバイスでは見ることができません（多分）。
+しかし、このゲームが面白く、評価されるべき作品であり、多くの人たちにこのウェブサイトを見てもらいたいと考えています。
+そこで、誠に勝手ながら非公式でフレックスボックスやグリッドレイアウトなどの現代のウェブレイアウト技術を用いながら、公式サイトのレスポンシブバージョンを勝手に作成しています。
+完成したら、minori公式が生きているようなら問い合わせをし、ダメだったら自分たちで見て楽しむ感じでいいんじゃないかと思っています。
+私は、レガシーなサイトが大好きですが、現代ではスマートフォンでは見るのが困難な状況です。
+これらの中には優れたサイトや面白いサイトも存在するのに、レスポンシブでないだけで見られないのはもったいないですよね。
+シンプルなサイトやアニメーションが多用され同じようなコンテンツばかりの量産型デザインな現代のウェブサイトとは真逆に、"レガシーを復活させる！"ことを目標に作成しているため、できるだけ元のサイトの良さは残しつつレスポンシブにしています。
+あの情報量の多さ！デザインの多様さ！が好きなんです、はい。
