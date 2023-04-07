@@ -3,7 +3,7 @@ This is an unofficial and unofficial project that uses modern HTML and CSS to ma
 Minori holds all the copyrights of the materials used.
 
 Update：
-・2023/04/07 => upload files
+2023/04/07 => upload files
 
 
 起動の仕方：
