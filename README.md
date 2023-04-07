@@ -2,6 +2,10 @@
 This is an unofficial and unofficial project that uses modern HTML and CSS to make the official website of Natsuzora no Perseus, a romance adventure game produced by minori, responsive.
 Minori holds all the copyrights of the materials used.
 
+Update
+2023/04/07
+upload files
+
 
 起動の仕方：
 1. zipファイルをダウンロードする
@@ -21,7 +25,7 @@ Minori holds all the copyrights of the materials used.
 
 完成したら、minori公式が生きているようなら問い合わせをし、ダメだったら自分たちで見て楽しむ感じでいいんじゃないかと思っています。
 
-私はレガシーなサイトたちが大好きですが、現代ではスマートフォンでは見るのが困難な状況です。
+私はレガシーなサイトたちが大好きですが、スマートフォンでは見るのが困難な状況が多数見られます。
 
 これらの中には優れたサイトや面白いサイトも存在するのに、レスポンシブでないだけで見られないのはもったいないですよね。
 
