@@ -1,0 +1,23 @@
+@layer base, component, page;
+
+@import url("components/_base.css") layer(base);
+
+@import url("components/helpers.css") layer(component);
+@import url("components/typography.css") layer(component);
+@import url("components/layouts.css") layer(component);
+@import url("components/buttons.css") layer(component);
+@import url("components/bar.css") layer(component);
+@import url("components/header.css") layer(component);
+@import url("components/menu.css") layer(component);
+@import url("components/pagination.css") layer(component);
+@import url("components/side.css") layer(component);
+@import url("components/footer.css") layer(component);
+
+@import url("pages/top.css") layer(page);
+@import url("pages/about.css") layer(page);
+@import url("pages/character.css") layer(page);
+@import url("pages/product.css") layer(page);
+@import url("pages/support.css") layer(page);
+@import url("pages/goods.css") layer(page);
+@import url("pages/special.css") layer(page);
+@import url("pages/webradio.css") layer(page);

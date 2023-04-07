@@ -1,0 +1,36 @@
+#hero img {
+  width: 100%;
+  text-align: center;
+}
+
+
+.img-text {
+  display: flex;
+  align-items: center;
+}
+
+.img-text img {
+  float: left;
+  margin-right: 10px; 
+}
+
+@media (max-width: 992px) {
+  .img-text {
+    display: block;
+  }
+
+  .img-text img {
+    float: none;
+  }
+}
+
+#main-contents .event-schedule-list dt,
+#main-contents .event-schedule-list dd ul li {
+  line-height: 1.8;
+}
+
+#main-contents .event-schedule-list dd ul {
+  list-style: "・";
+  padding-left: 13px;
+}
+
