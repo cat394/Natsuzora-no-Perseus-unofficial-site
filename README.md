@@ -3,6 +3,16 @@ This is an unofficial and unofficial project that uses modern HTML and CSS to ma
 Minori holds all the copyrights of the materials used.
 
 
+起動の仕方：
+1. zipファイルをダウンロードする
+2. 解凍する
+3. なんかのエディタで開き、ターミナルを起動する
+4. npm installとコマンドを打つ
+5. npm run devとコマンドを打つ
+6. キーボードの"o"（オー）を押す
+7. webサイトが開く
+
+
 現在、夏空のペルセウスの公式サイトはスマートフォンやタブレットなど画面幅のあまりないデバイスでは見ることができません（多分）。
 
 しかし、このゲームは面白く、評価されるべき作品であり、多くの人たちにこのウェブサイトを見てもらいたいと考えています。
