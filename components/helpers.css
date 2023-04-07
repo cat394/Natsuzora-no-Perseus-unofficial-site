@@ -107,7 +107,7 @@
  */
 
 .space--sm {
-    padding-inline: 0.3em;
+    padding-inline: 0.1px;
 }
 
 .space--md {
@@ -148,6 +148,11 @@
 /*  
  * topシリーズ
  */
+
+.top--30px {
+    margin-top: 30px;
+}
+
 
 .top--3_5ch {
     margin-top: 3.5ch
