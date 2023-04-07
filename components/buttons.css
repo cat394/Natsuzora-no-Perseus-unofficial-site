@@ -1,0 +1,17 @@
+.btn {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.btn--raised {
+  color: var(--text-color);
+  background-color: var(--light-gary);
+  border: 1px solid var(--text-color);
+  padding: 10px 20px;
+}

@@ -1,0 +1,89 @@
+:root {
+  --base-color: white;
+  --base-color-darken: #1c1d4d;
+  --text-color: black;
+  --text-color-darken: white;
+  --link-color: #4DA2E8;
+  --light-gary: #E5E5E5;
+  --gray: #333333;
+  --space-margin-inline: 0.3ch;
+  --btn-gap: 7px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+html.dark-theme {
+  --base-color: var(--base-color-darken);
+  --text-color: var(--text-color-darken);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+}
+
+a:link {  
+  color: var(--link-color); 
+  text-decoration: none;
+}
+
+a:visited {  
+  color: #2780C9; 
+  text-decoration: none;
+}
+a:active {  
+  color: var(--link-color); 
+  text-decoration: underline;
+}
+a:hover {  
+  text-decoration: underline;
+  filter: brightness(85%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+hr {
+  width: 100%;
+  size: 5;
+  color: #cce4f2;
+  border-style: dashed;
+  margin-block: 16px;
+}
+
+
+
+figcaption {
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+em {
+  font-style: normal;
+}

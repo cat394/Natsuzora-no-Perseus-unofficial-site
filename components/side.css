@@ -1,0 +1,31 @@
+#publicity ol {
+  margin-block: 2ch;
+}
+
+#publicity a::before {
+  content: '>';
+  color: var(--text-color);
+  padding-inline: 0.5ch;
+}
+
+#publicity .post-content {
+  margin-left: 1ch;
+}
+
+#publicity li {
+  margin-bottom: 1ch;
+}
+
+#vote .result {
+  padding-block: 2ch;
+}
+
+#vote .result .before-arrow-right--double::before {
+  color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+  #vote .result.flex-sb {
+    display: block;
+  }
+}

@@ -1,0 +1,22 @@
+.text--md {
+  font-size: 0.75rem; 
+  line-height: 1.68;
+}
+
+.text--sm {
+  font-size: 0.68rem;
+}
+
+.text--lg {
+  font-size: 0.87rem;
+}
+
+.text--smaller {
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  .text--sm {
+    font-size: 0.2rem;
+  }
+}

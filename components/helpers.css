@@ -1,0 +1,208 @@
+.sr-only,
+.sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.word-break {
+    word-break: break-all;
+}
+
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+
+/*  
+ * ダブルクウォート
+ */
+
+.double-quote::before {
+    content: '"';
+}
+
+.double-quote::after {
+    content: '"';
+}
+
+
+
+/*  
+ * dotシリーズ
+ */
+
+.before-dot::before {
+    content: '●';
+}
+
+.before-dot--textcolor::before {
+    content: '●';
+    color: var(--text-color);
+}
+
+.both-dot::before,
+.both-dot::after {
+    content: '●';
+}
+
+
+
+/*  
+ * arrowシリーズ
+ */
+
+.before-arrow-right--double::before {
+    content: '»';
+    padding-inline: 0.3em;
+}
+
+.before-arrow-right--double-linkcolor::before {
+    content: '»';
+    padding-inline: 0.3em;
+    color: var(--link-color);
+}
+
+
+
+/*  
+ * 強調しない文字のグレー
+ */
+
+.gray {
+    color: var(--gray);
+}
+
+
+
+/*  
+ * flex → space-between
+ */
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/*  
+ * spaceシリーズ
+ */
+
+.space--sm {
+    padding-inline: 0.3em;
+}
+
+.space-md {
+    padding-inline: 0.5em
+}
+
+
+
+/*  
+ * top-bottomシリーズ
+ */
+
+.top-bottom--1_5em {
+    margin-block: 1.5em;
+}
+
+.top-bottom-1_8ch {
+    margin-block: 1.8ch;
+}
+
+.top-bottom--2ch {
+    margin-block: 2ch;
+}
+
+.top-bottom--2_7ch {
+    margin-block: 2.7ch;
+}
+
+.top-bottom--3ch {
+    margin-block: 3ch;
+}
+
+.top-bottom--6ch {
+    margin-block: 6ch;
+}
+
+
+/*  
+ * topシリーズ
+ */
+
+.top--3_5ch {
+    margin-top: 3.5ch
+}
+
+.top--6ch {
+    margin-top: 6ch;
+}
+
+
+
+/*  
+ * bottomシリーズ
+ */
+
+.bottom--20vh {
+    margin-bottom: 20vh;
+}
+
+.bottom--1ch {
+    margin-bottom: 1ch;
+}
+
+.bottom--2ch {
+    margin-bottom: 2ch;
+}
+
+.bottom--3_5ch {
+    margin-bottom: 3.5ch;
+}
+
+.bottom--6ch {
+    margin-bottom: 6ch;
+}
+
+
+
+/*  
+ * リンクカラー(薄い水色)
+ */
+
+.link-color {
+    color: var(--link-color);
+}
+
+
+
+/*  
+ * 破線
+ */
+
+hr.dashed{
+    width: 30%;
+    color: transparent;
+    background-image : linear-gradient(to right, var(--text-color) 7px, transparent 3px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
