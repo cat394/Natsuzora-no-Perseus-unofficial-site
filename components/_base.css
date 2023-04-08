@@ -4,6 +4,7 @@
   --text-color: black;
   --text-color-darken: white;
   --link-color: #4DA2E8;
+  --link-color--deep: #2780C9;
   --light-gary: #E5E5E5;
   --gray: #333333;
   --space-margin-inline: 0.3ch;
@@ -21,16 +22,6 @@
 html {
   background-color: var(--base-color);
   color: var(--text-color);
-}
-
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 html.dark-theme {
@@ -60,10 +51,14 @@ a:hover {
   filter: brightness(85%);
 }
 
+b {
+  font-weight: normal;
+}
+
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: inline-block;
 }
 
 ul, ol {
@@ -78,8 +73,6 @@ hr {
   border-style: dashed;
   margin-block: 16px;
 }
-
-
 
 figcaption {
   margin-top: 3px;

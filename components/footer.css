@@ -1,5 +1,9 @@
 footer .container {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
+footer img {
+  display: block;
+}

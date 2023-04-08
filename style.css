@@ -9,9 +9,9 @@
 @import url("components/bar.css") layer(component);
 @import url("components/header.css") layer(component);
 @import url("components/menu.css") layer(component);
-@import url("components/pagination.css") layer(component);
 @import url("components/side.css") layer(component);
 @import url("components/footer.css") layer(component);
+@import url("components/pagination.css") layer(component);
 
 @import url("pages/top.css") layer(page);
 @import url("pages/about.css") layer(page);

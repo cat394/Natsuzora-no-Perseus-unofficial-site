@@ -1,3 +1,51 @@
+/* 
+ *
+ *
+ * こちらには便利なスペーサーなどのクラスが置いてあります
+ *
+ * 1. sr-only ：スクリーンリーダーのみで読み取ることが可能なコンテンツにします
+ *  
+ * 2. text-center ：テキストを中央に配置します
+ * 
+ * 3. word-break ：日本語のキリのいいところで勝手に改行されることを防ぎます
+ *
+ * 4. font-bold ：テキストを太字にします。<strong>や<b>、<em>はデフォルトでノーマルにしてあります
+ *
+ * 5. double-quote ：テキストをダブルクォートで囲います
+ *
+ * 6. before-dot, both-dot ：前だけに大きな丸い点を入れるか、前後に入れることができます
+ *
+ * 7. before-arrow-right--double ：前に右方向の二重矢印マークをつけます。
+ *    before-arrow-right--double--linkcolor ：リンクカラー（薄い青）色のバージョンです
+ *
+ * 8. gray ：文字をグレー（もはや黒に近い)にします
+ *
+ * 9. flex-sb ：フレックスボックスにし、justify-content:space-betweenにします
+ *
+ * 10. space--md ：dotシリーズを使用した際にドットと文字の間にいい感じにスペースを入れる
+ *
+ * 11. link-color ：テキストをリンクカラー(薄い青色)にする
+ *     link-color--deep ：テキストの色をリンクの濃い青色バージョンのやつにする
+ *
+ * 12. hr.dashed ：破線を引く（主にイベントの詳細の部分で使っている）
+ *
+ * 13. top-bottomシリーズ ：上下にマージンを作る
+ *
+ * 13. topシリーズ ：上にマージンを作る
+ *     
+ * 14. bottomシリーズ ：下にマージンを作る    
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+
+
 .sr-only,
 .sr-only-focusable:not(:focus):not(:focus-within) {
     position: absolute;
@@ -15,7 +63,6 @@
 .text-center {
     text-align: center;
 }
-
 
 .word-break {
     word-break: break-all;
@@ -90,6 +137,33 @@
 
 
 /*  
+ * リンクカラー(薄い水色)
+ */
+
+.link-color {
+    color: var(--link-color);
+}
+
+.link-color--deep {
+    color: var(--link-color--deep);
+}
+
+
+
+/*  
+ * 破線
+ */
+
+hr.dashed{
+    width: 30%;
+    color: transparent;
+    background-image : linear-gradient(to right, var(--text-color) 7px, transparent 3px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+}
+
+
+/*  
  * flex → space-between
  */
 
@@ -105,10 +179,6 @@
 /*  
  * spaceシリーズ
  */
-
-.space--sm {
-    padding-inline: 0.1px;
-}
 
 .space--md {
     padding-inline: 0.5em
@@ -186,28 +256,4 @@
 
 .bottom--6ch {
     margin-bottom: 6ch;
-}
-
-
-
-/*  
- * リンクカラー(薄い水色)
- */
-
-.link-color {
-    color: var(--link-color);
-}
-
-
-
-/*  
- * 破線
- */
-
-hr.dashed{
-    width: 30%;
-    color: transparent;
-    background-image : linear-gradient(to right, var(--text-color) 7px, transparent 3px);
-    background-size: 10px 1px;
-    background-repeat: repeat-x;
 }
