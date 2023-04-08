@@ -59,19 +59,12 @@ img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  vertical-align: middle;
 }
 
 ul, ol {
   list-style: none;
   padding-left: 0;
-}
-
-hr {
-  width: 100%;
-  size: 5;
-  color: #cce4f2;
-  border-style: dashed;
-  margin-block: 16px;
 }
 
 figcaption {
@@ -81,4 +74,6 @@ figcaption {
 
 em {
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }

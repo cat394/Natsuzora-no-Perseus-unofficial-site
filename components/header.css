@@ -1,0 +1,11 @@
+header img {
+  width: 100%;
+}
+
+header img:nth-of-type(2) {
+  margin-bottom: 25px;
+}
+
+header + main #main-contents hr:first-of-type {
+  margin-top: 0;
+}
