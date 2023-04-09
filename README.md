@@ -1,5 +1,7 @@
 # Project to improve Natsuzora Perseus website!!
 （『夏空のペルセウス』非公式・非公認ウェブサイトの制作）
+
+
 This is an unofficial project that uses modern HTML and CSS to make the official website of Natsuzora no Perseus, a romance adventure game produced by minori, responsive.
 All materials are owned by minori and I own the rights to the code.
 
