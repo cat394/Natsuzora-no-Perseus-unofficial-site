@@ -221,19 +221,19 @@ hr.dashed{
  */
 
 .top-bottom--1br {
-    margin-block: calc(1em * 1.2);
+    margin-block: calc(1em * 1.1);
 }
 
 .top-bottom--2br {
-    margin-block: calc(2em * 1.2);
+    margin-block: calc(2em * 1.1);
 }
 
 .top-bottom--3br {
-    margin-block: calc(3em * 1.2);
+    margin-block: calc(3em * 1.1);
 }
 
 .top-bottom--6br {
-    margin-block: calc(6em * 1.2);
+    margin-block: calc(6em * 1.1);
 }
 
 
@@ -246,12 +246,20 @@ hr.dashed{
     margin-top: 30px;
 }
 
+.top--1br {
+    margin-top: calc(1em * 1.1);
+}
+
 .top--2br {
-    margin-top: calc(2em * 1.2);
+    margin-top: calc(2em * 1.1);
+}
+
+.top--3br {
+    margin-top: calc(3em * 1.1);
 }
 
 .top--6br {
-    margin-top: calc(6em * 1.2);
+    margin-top: calc(6em * 1.1);
 }
 
 
@@ -264,21 +272,28 @@ hr.dashed{
     margin-bottom: 20vh;
 }
 
+.bottom--1br {
+    margin-bottom: calc(1em * 1.1);
+}
+
 .bottom--2br {
-    margin-bottom: calc(2em * 1.2);
+    margin-bottom: calc(2em * 1.1);
 }
 
 .bottom--3br {
-    margin-bottom: calc(3em * 1.2);
+    margin-bottom: calc(3em * 1.1);
+}
+
+.bottom--4br {
+    margin-bottom: calc(4em * 1.1);
 }
 
 .bottom--6br {
-    margin-bottom: calc(6em * 1.2);
+    margin-bottom: calc(6em * 1.1);
 }
 
-
-.pad-inline--1halfspace {
-    padding: 0.25em;
+.pad-inline--1em {
+    padding-inline: 1em;
 }
 
 .pad-left--2ch {
