@@ -6,9 +6,9 @@ Update：
 
 2023/04/07 => upload files
 
-2023/04/06 => complete About page
+2023/04/08 => complete About page
 
-2023/04/07 => complete Story page
+2023/04/09 => complete Story page
 
 
 
