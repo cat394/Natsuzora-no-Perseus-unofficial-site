@@ -118,23 +118,20 @@
 
 .before-arrow-right::before {
     content: '>';
-    padding-right: 0.3em;
 }
 
 .before-arrow-right-linkcolor::before {
     content: '>';
-    padding-right: 0.3em;
     color: var(--link-color);
+    font-weight: bold;
 }
 
 .before-arrow-right--double::before {
     content: '»';
-    padding-right: 0.3em;
 }
 
 .before-arrow-right--double-linkcolor::before {
     content: '»';
-    padding-right: 0.3em;
     color: var(--link-color);
 }
 
@@ -143,6 +140,7 @@
     content: '/';
     padding-inline: 0.5em;
 }
+
 
 
 /*  
@@ -189,6 +187,7 @@ hr.dashed{
 }
 
 
+
 /*  
  * flex → space-between
  */
@@ -221,33 +220,22 @@ hr.dashed{
  * top-bottomシリーズ
  */
 
-.top-bottom--1_5em {
-    margin-block: 1.5em;
+.top-bottom--1br {
+    margin-block: calc(1em * 1.2);
 }
 
-.top-bottom-1_8ch {
-    margin-block: 1.8ch;
+.top-bottom--2br {
+    margin-block: calc(2em * 1.2);
 }
 
-.top-bottom--2ch {
-    margin-block: 2ch;
+.top-bottom--3br {
+    margin-block: calc(3em * 1.2);
 }
 
-.top-bottom--2_7ch {
-    margin-block: 2.7ch;
+.top-bottom--6br {
+    margin-block: calc(6em * 1.2);
 }
 
-.top-bottom--3ch {
-    margin-block: 3ch;
-}
-
-.top-bottom--3_5ch {
-    margin-block: 3.5ch;
-}
-
-.top-bottom--6ch {
-    margin-block: 6ch;
-}
 
 
 /*  
@@ -258,17 +246,12 @@ hr.dashed{
     margin-top: 30px;
 }
 
-.top--2ch {
-    margin-top: 2ch;
+.top--2br {
+    margin-top: calc(2em * 1.2);
 }
 
-
-.top--3_5ch {
-    margin-top: 3.5ch
-}
-
-.top--6ch {
-    margin-top: 6ch;
+.top--6br {
+    margin-top: calc(6em * 1.2);
 }
 
 
@@ -281,22 +264,23 @@ hr.dashed{
     margin-bottom: 20vh;
 }
 
-.bottom--1ch {
-    margin-bottom: 1ch;
+.bottom--2br {
+    margin-bottom: calc(2em * 1.2);
 }
 
-.bottom--2ch {
-    margin-bottom: 2ch;
+.bottom--3br {
+    margin-bottom: calc(3em * 1.2);
 }
 
-.bottom--3_5ch {
-    margin-bottom: 3.5ch;
+.bottom--6br {
+    margin-bottom: calc(6em * 1.2);
 }
 
-.bottom--6ch {
-    margin-bottom: 6ch;
+
+.pad-inline--1halfspace {
+    padding: 0.25em;
 }
 
-.pad-inline--1ch {
-    padding: 1ch;
+.pad-left--2ch {
+    padding-left: 2ch;
 }
