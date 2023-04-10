@@ -16,7 +16,7 @@
  * 6. before-dot, both-dot ：前だけに大きな丸い点を入れるか、前後に入れることができます
  *
  * 7. before-arrow-right--double ：前に右方向の二重矢印マークをつけます。
- *    before-arrow-right--double--linkcolor ：リンクカラー（薄い青）色のバージョンです
+ *    before-arrow-right--double--lightblue ：リンクカラー（薄い青）色のバージョンです
  *
  * 8. gray ：文字をグレー（もはや黒に近い)にします
  *
@@ -24,8 +24,8 @@
  *
  * 10. space--md ：dotシリーズを使用した際にドットと文字の間にいい感じにスペースを入れる
  *
- * 11. link-color ：テキストをリンクカラー(薄い青色)にする
- *     link-color--deep ：テキストの色をリンクの濃い青色バージョンのやつにする
+ * 11. blue-light ：テキストをリンクカラー(薄い青色)にする
+ *     blue-deep ：テキストの色をリンクの濃い青色バージョンのやつにする
  *
  * 12. hr.dashed ：破線を引く（主にイベントの詳細の部分で使っている）
  *
@@ -120,9 +120,9 @@
     content: '>';
 }
 
-.before-arrow-right-linkcolor::before {
+.before-arrow-right-lightblue::before {
     content: '>';
-    color: var(--link-color);
+    color: var(--blue-light);
     font-weight: bold;
 }
 
@@ -130,9 +130,9 @@
     content: '»';
 }
 
-.before-arrow-right--double-linkcolor::before {
+.before-arrow-right--double-lightblue::before {
     content: '»';
-    color: var(--link-color);
+    color: var(--blue-light);
 }
 
 
@@ -147,8 +147,8 @@
  * 強調しない文字のグレー
  */
 
-.gray {
-    color: var(--gray);
+.gray-deep {
+    color: var(--gray-deep);
 }
 
 
@@ -157,12 +157,12 @@
  * リンクカラー(薄い水色)
  */
 
-.link-color {
-    color: var(--link-color);
+.blue-light {
+    color: var(--blue-light);
 }
 
-.link-color--deep {
-    color: var(--link-color--deep);
+.blue-deep {
+    color: var(--blue-deep);
 }
 
 

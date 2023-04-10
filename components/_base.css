@@ -1,12 +1,16 @@
 :root {
   --base-color: white;
-  --base-color-darken: #1c1d4d;
+  --base-color-dark: #1c1d4d;
+
   --text-color: black;
-  --text-color-darken: white;
-  --link-color: #4DA2E8;
-  --link-color--deep: #2780C9;
-  --light-gary: #E5E5E5;
-  --gray: #333333;
+  --text-color-dark: white;
+
+  --blue-light: #4DA2E8;
+
+  --blue-deep: #2780C9;
+
+  --gray-light: #E5E5E5;
+  --gray-deep: #333333;
   --space-margin-inline: 0.3ch;
   --btn-gap: 7px;
 }
@@ -34,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link {  
-  color: var(--link-color); 
+  color: var(--blue-light); 
   text-decoration: none;
 }
 
@@ -43,7 +47,7 @@ a:visited {
   text-decoration: none;
 }
 a:active {  
-  color: var(--link-color); 
+  color: var(--blue-light); 
   text-decoration: underline;
 }
 a:hover {  

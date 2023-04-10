@@ -24,12 +24,14 @@
   }
 }
 
-#main-contents .event-schedule-list dt,
-#main-contents .event-schedule-list dd ul li {
+
+
+.event-schedule-list dt,
+.event-schedule-list dd ul li {
   line-height: 1.8;
 }
 
-#main-contents .event-schedule-list dd ul {
+.event-schedule-list dd ul {
   list-style: "・";
   padding-left: 13px;
 }

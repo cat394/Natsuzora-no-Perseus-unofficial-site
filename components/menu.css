@@ -1,13 +1,12 @@
-details {
-  margin-block: 20px 10px;
-}
-
 .plus-suffix::after {
   content: '+';
   padding-inline: 5px;
   letter-spacing: 1;
 }
 
+details {
+  margin-block: 10px;
+}
 
 details[open] .plus-suffix::after {
   content: '^';
