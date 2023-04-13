@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>（非公式）::夏空のペルセウス | minori::</title>
   <link rel="stylesheet" href="style.css">
+  <script src="./js/audioController.js" defer></script>
 </head>
 <body>
 
@@ -31,7 +32,7 @@
   </div>
 
 
-
+  
   <!-- ヘッダーだよ！ -->
 
   <header>
@@ -65,7 +66,7 @@
               <ul class="menu-grid">
                 <li><a href="about.html"><img src="./assets/buttons/about.jpg" alt="作品概要" width="200" height="52"></a></li>
                 <li><img src="./assets/buttons/story_current.jpg" alt="ストーリー" width="200" height="52"></li>
-                <li><a href="character.html"><img src="./assets/buttons/character.jpg" alt="キャラクター" width="200" height="52"></a></li>
+                <li><img src="./assets/buttons/character_current.jpg" alt="キャラクター" width="200" height="52"></li>
                 <li><a href="product.html"><img src="./assets/buttons/product.jpg" alt="製品概要" width="200" height="52"></a></li>
                 <li><a href="support.html"><img src="./assets/buttons/support.jpg" alt="ユーザーサポート" width="200" height="52"></a></li>
                 <li><a href="goods.html"><img src="./assets/buttons/goods.jpg" alt="関連グッズ" width="200" height="52"></a></li>
@@ -88,7 +89,7 @@
                 <ul id="mobile-nav">
                   <li><a href="about.html"><img src="./assets/buttons/about.jpg" alt="作品概要" width="200" height="52"></a></li>
                   <li><img src="./assets/buttons/story_current.jpg" alt="ストーリー" width="200" height="52"></li>
-                  <li><a href="character.html"><img src="./assets/buttons/character.jpg" alt="キャラクター" width="200" height="52"></a></li>
+                  <li><img src="./assets/buttons/character_current.jpg" alt="キャラクター" width="200" height="52"></li>
                   <li><a href="product.html"><img src="./assets/buttons/product.jpg" alt="製品概要" width="200" height="52"></a></li>
                   <li><a href="support.html"><img src="./assets/buttons/support.jpg" alt="ユーザーサポート" width="200" height="52"></a></li>
                   <li><a href="goods.html"><img src="./assets/buttons/goods.jpg" alt="関連グッズ" width="200" height="52"></a></li>
@@ -114,39 +115,249 @@
             <!-- 内容の部分だよ！ -->
 
             <section id="intro-fuyuperu" class="text--lg font-bold bottom--2br">
-                <img src="assets/story/fuyuperu.jpg" alt="冬空のペルセウス" width="490" height="205">
-                <p class="bottom--1br">
-                  <b>
-                    [ 遠野 森羅・前日譚：
-                    <a href="http://www.minori.ph/lineup/perseus/shinra05a.html">
-                    <em>
-                      冬空のペルセウス
-                    </em></a> ] 公開中
-                  </b>
-                </p>
-                <ul class="text--lg blue-deep number-list">
-                  <li class="before-arrow-right--double"><a href="#">01</a></li>
-                  <li class="before-arrow-right--double"><a href="#">02</a></li>
-                  <li class="before-arrow-right--double"><a href="#">03</a></li>
-                  <li class="before-arrow-right--double"><a href="#">04</a></li>
-                  <li class="before-arrow-right--double"><a href="#">05</a></li>
-                </ul>
-                <ul class="thumbs-list">
-                  <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb1.jpg" alt="冬空のペルセウス1"></a></li>
-                  <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb2.jpg" alt="冬空のペルセウス2"></a></li>
-                  <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb3.jpg" alt="冬空のペルセウス3"></a></li>
-                  <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb4.jpg" alt="冬空のペルセウス4"></a></li>
-                  <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb5.jpg" alt="冬空のペルセウス5"></a></li>
-                </ul>
-                </div>
+              <img src="assets/story/fuyuperu.jpg" alt="冬空のペルセウス" width="490" height="205">
+              <p class="bottom--1br">
+                <b>
+                  [ 遠野 森羅・前日譚：
+                  <a href="http://www.minori.ph/lineup/perseus/shinra05a.html">
+                  <em>
+                    冬空のペルセウス
+                  </em></a> ] 公開中
+                </b>
+              </p>
+              <ul class="text--lg blue-deep number-list">
+                <li class="before-arrow-right--double"><a href="#">01</a></li>
+                <li class="before-arrow-right--double"><a href="#">02</a></li>
+                <li class="before-arrow-right--double"><a href="#">03</a></li>
+                <li class="before-arrow-right--double"><a href="#">04</a></li>
+                <li class="before-arrow-right--double"><a href="#">05</a></li>
+              </ul>
+              <ul class="thumbs-list">
+                <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb1.jpg" alt="冬空のペルセウス1" width="160" height="67"></a></li>
+                <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb2.jpg" alt="冬空のペルセウス2" width="160" height="67"></a></li>
+                <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb3.jpg" alt="冬空のペルセウス3" width="160" height="67"></a></li>
+                <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb4.jpg" alt="冬空のペルセウス4" width="160" height="67"></a></li>
+                <li><a href="#"><img src="./assets/character/fuyuperu-thumbs/thumb5.jpg" alt="冬空のペルセウス5" width="160" height="67"></a></li>
+              </ul>
             </section>
+          </article>
 
 
 
-            <section class="characters">
+          <!-- キャラクター一覧 -->
+          <article id="characters">
+            <section id="shinra">
+              <div class="flex-end">
+                <div class="name">
+                  <!-- font やさしさゴシックボールド -->
+                  <ruby>
+                    <span class="kanji name-blue font-bold">
+                      <span class="first">遠野</span>
+                      <span class="last">森羅</span>
+                    </span>
+                    <rt class="hira name-blue-deep">
+                      <span class="first">とおの</span>
+                      <span class="last">しんら</span>
+                    </rt>
+                    <rt class="rome name-blue-deep">
+                      Shinra Tohno
+                    </rt>
+                  </ruby>
+                </div>
+                <div class="character_desc text--sm name-blue-deep font-bold">
+                  <p>
+                    学園の２年生で転校生。他人の「痛み」を自分に移す力を持っている。身寄りがなく、その力のせいで、過去何度も他人に利用されたり問題を起こしているが－それでも、自分の力にはなにか意味があると信じている。
+                    <br>
+                    慎重で冷静な性格だが、根本にあるのはお人好しさ。
+                  </p>
+                </div>
+              </div>
+            </section>
+            <hr>
+            <section class="character" id="ren">
+              <div class="header">
+                <img  class="width-100" src="./assets/character/ren/ren_header.jpg" alt="" width="490" height="251">
+                <p class="name-blue font-bold">世界に私と森羅の２人だけだったらよかったのに</p>
+              </div>
+              <div class="grid">
+                <div class="character_image">
+                  <img src="./assets/character/ren/ren.png" alt="遠野恋" width="216" height="454">
+                </div>
+                <div class="character_details">
+                  <div class="flex-end">
+                    <div class="name">
+                      <!-- font やさしさゴシックボールド -->
+                      <ruby>
+                        <span class="kanji name-blue font-bold">
+                          <span class="first">遠野</span>
+                          <span class="last">恋</span>
+                        </span>
+                        <rt class="hira name-blue-deep">
+                          <span class="first">とおの</span>
+                          <span class="last">れん</span>
+                        </rt>
+                        <rt class="rome name-blue-deep">
+                          Ren Tohno
+                        </rt>
+                      </ruby>
+                    </div>
+                  </div>
+                  <div class="character_desc text--sm name-blue-deep font-bold">
+                    <p>
+                      学園の１年生で転校生。兄である森羅と同じ力をもっている。
+                      <br>物心ついたころから他人に利用されていた過去により、人間不信を抱いている。世界で信じられるのは、同じ力をもった兄の森羅だけ。<br>自己中心的でわがままだが、行動理由の最優先事項は森羅のこと。お人好しな兄のことを姉であり、母であり、ひとりの女として愛している。
+                    </p>
+                  </div>
+                </div>
+                <div class="character_rough">
+                  <img src="./assets/character/ren/ren_rough.jpg" alt="遠野恋" width="277" height="188">
+                </div>
+              </div>
+              <div class="voice-sample text-sm">
+                <p class="font-bold">
+                  <span class="before-arrow-right--double-lightblue">
+                    [ <span class="blue-light">ボイスサンプル</span>｜cv. 楠原ゆい ] 
+                  </span>
+                </p>
+                <ul class="sample-list">
+                  <li>
+                    <div id="ren-sample-1">
+                      <figure>
+                        <figcaption class="font-bold">サンプル1</figcaption>
+                        <audio controls src="./assets/audio/ren/ren1.mp3">
+                          <a href="./assets/audio/ren/ren1.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ren-sample-2">
+                      <figure>
+                        <figcaption class="font-bold">サンプル2</figcaption>
+                        <audio controls src="./assets/audio/ren/ren2.mp3">
+                          <a href="./assets/audio/ren/ren2.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                  <li>
+                    <div id="ren-sample-3">
+                      <figure>
+                        <figcaption class="font-bold">サンプル3</figcaption>
+                        <audio controls src="./assets/audio/ren/ren3.mp3">
+                          <a href="./assets/audio/ren/ren3.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ren-sample-4">
+                      <figure>
+                        <figcaption class="font-bold">サンプル4</figcaption>
+                        <audio controls src="./assets/audio/ren/ren4.mp3">
+                          <a href="./assets/audio/ren/ren4.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                </ul>
+              </div>
+              <div class="cg-sample">
+                <div class="flex">
+                  <p class="font-bold">
+                    <span class="before-arrow-right--double-lightblue">
+                      [ <span class="blue-light">CGサンプル</span> ] 
+                    </span>
+                  </p>
+                  <p class="pad-left--1ch">
+                    サムネイルをクリックすると画像を拡大して、ご覧頂けます
+                  </p>
+                </div>
+                <div class="image-list">
+                  <img src="./assets/character/ren/ren-cg1_sm.jpg" alt="こちらに振り向く恋ちゃん" tabindex="0" data-modal-id="modal1">
+                  <img src="./assets/character/ren/ren-cg2_sm.jpg" alt="こちらを見下す恋ちゃん" tabindex="0" data-modal-id="modal1">
+                  <img src="./assets/character/ren/ren-cg3_sm.jpg" alt="お着換え中の恋ちゃん" tabindex="0" data-modal-id="modal1">
+                  <img src="./assets/character/ren/ren-cg4_sm.jpg" alt="ドキドキする恋ちゃん" tabindex="0" data-modal-id="modal1">
+                </div>
+                <div id="modal1" class="modal">
+                  <button id="close-btn" class="close-btn" aria-label="閉じる">&times;</button>
+                  <div class="modal-content">
+                    <img id="modal-img" src="" alt="拡大表示された画像">
+                  </div>
+                </div>
+                <script>
+                  const images = document.querySelectorAll(".image-list img");
+                  const modals = document.querySelectorAll(".modal");
+                  const closeButtons = document.querySelectorAll(".close-btn");
+
+                  images.forEach(img => {
+                    img.addEventListener("click", () => {
+                        const modalId = img.dataset.modalId;
+                        const targetModal = document.getElementById(modalId);
+                        openModal(targetModal);
+                    });
+                    img.addEventListener("keydown", event => {
+                      if (event.key === "Enter") {
+                        const modalId = img.dataset.modalId;
+                        const targetModal = document.getElementById(modalId);
+                        openModal(targetModal);
+                      }
+                    });
+                  });
+
+                closeButtons.forEach(btn => {
+                  btn.addEventListener("click", () => {
+                    const targetModal = btn.closest(".modal");
+                    closeModal(targetModal);
+                  });
+                  btn.addEventListener("keydown", event => {
+                    if (event.key === "Enter") {
+                      const targetModal = btn.closest(".modal");
+                      closeModal(targetModal);
+                    }
+                  });
+                });
+
+                modals.forEach(modal => {
+                  modal.addEventListener("click", event => {
+                    if (event.target === modal || event.target.closest(".close-btn")) {
+                      closeModal(modal);
+                    }
+                  });
+                });
+
+                document.addEventListener("keydown", event => {
+                  if (event.key === "Escape") {
+                    modals.forEach(modal => {
+                      if (modal.style.display === "block") {
+                        closeModal(modal);
+                      }
+                    });
+                  }
+                });
+
+                function openModal(modal) {
+                modal.style.display = "block";
+                }
+
+                function closeModal(modal) {
+                modal.style.display = "none";
+                }
+                </script>
+
+
+              </div>
+
               
             </section>
-
           </article>
         </div>
 

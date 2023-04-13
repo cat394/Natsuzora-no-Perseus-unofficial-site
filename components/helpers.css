@@ -76,6 +76,14 @@
     font-weight: bold;
 }
 
+.name-blue {
+    color: var(--name-blue);
+}
+
+.name-blue-deep {
+    color: var(--name-blue-deep);
+}
+
 
 
 /*  
@@ -292,10 +300,24 @@ hr.dashed{
     margin-bottom: calc(6em * 1.1);
 }
 
+
+/* 
+ *
+ * paddingシリーズ
+ *
+ */
 .pad-inline--1em {
     padding-inline: 1em;
 }
 
+.pad-left--1ch {
+    padding-left: 1ch;
+}
+
 .pad-left--2ch {
     padding-left: 2ch;
+}
+
+.width-100 {
+    width: 100%;
 }

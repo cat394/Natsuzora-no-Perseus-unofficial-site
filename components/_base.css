@@ -11,8 +11,13 @@
 
   --gray-light: #E5E5E5;
   --gray-deep: #333333;
+
   --space-margin-inline: 0.3ch;
+
   --btn-gap: 7px;
+
+  --name-blue: #3A39C6;
+  --name-blue-deep: #3B3975;
 }
 
 *,
