@@ -176,7 +176,7 @@
             <hr>
             <section class="character" id="ren">
               <div class="header">
-                <img  class="width-100" src="./assets/character/ren/ren_header.jpg" alt="" width="490" height="251">
+                <img  class="width-100" src="./assets/character/ren/ren_header.jpg" alt="夏の田舎で自転車を引く恋ちゃん" width="490" height="251">
                 <p class="name-blue font-bold">世界に私と森羅の２人だけだったらよかったのに</p>
               </div>
               <div class="grid">
@@ -210,7 +210,7 @@
                   </div>
                 </div>
                 <div class="character_rough">
-                  <img src="./assets/character/ren/ren_rough.jpg" alt="遠野恋" width="277" height="188">
+                  <img src="./assets/character/ren/ren_rough.jpg" alt="遠野恋のラフ画" width="277" height="188">
                 </div>
               </div>
               <div class="voice-sample text-sm">
@@ -281,83 +281,368 @@
                     サムネイルをクリックすると画像を拡大して、ご覧頂けます
                   </p>
                 </div>
-                <div class="image-list">
-                  <img src="./assets/character/ren/ren-cg1_sm.jpg" alt="こちらに振り向く恋ちゃん" tabindex="0" data-modal-id="modal1">
-                  <img src="./assets/character/ren/ren-cg2_sm.jpg" alt="こちらを見下す恋ちゃん" tabindex="0" data-modal-id="modal1">
-                  <img src="./assets/character/ren/ren-cg3_sm.jpg" alt="お着換え中の恋ちゃん" tabindex="0" data-modal-id="modal1">
-                  <img src="./assets/character/ren/ren-cg4_sm.jpg" alt="ドキドキする恋ちゃん" tabindex="0" data-modal-id="modal1">
+                <div class="thumbs-list">
+                  <img src="./assets/character/ren/ren-cg1_sm.jpg" alt="こちらに振り向く恋ちゃん" width="122" height="69">
+                  <img src="./assets/character/ren/ren-cg2_sm.jpg" alt="こちらを見下す恋ちゃん" width="122" height="69">
+                  <img src="./assets/character/ren/ren-cg3_sm.jpg" alt="お着換え中の恋ちゃん" width="122" height="69">
+                  <img src="./assets/character/ren/ren-cg4_sm.jpg" alt="ドキドキする恋ちゃん" width="122" height="69">
                 </div>
-                <div id="modal1" class="modal">
-                  <button id="close-btn" class="close-btn" aria-label="閉じる">&times;</button>
-                  <div class="modal-content">
-                    <img id="modal-img" src="" alt="拡大表示された画像">
+              </div>              
+            </section>
+            <hr>
+            <section class="character" id="sui">
+              <div class="header">
+                <img  class="width-100" src="./assets/character/sui/sui_header.jpg" alt="沢で元気に話しかけてくる翠ちゃん" width="490" height="251">
+                <p class="name-blue font-bold">友達だから、…キスしてくれないのかな？</p>
+              </div>
+              <div class="grid">
+                <div class="character_image">
+                  <img src="./assets/character/sui/sui.png" alt="皆川翠" width="216" height="454">
+                </div>
+                <div class="character_details">
+                  <div class="flex-end">
+                    <div class="name">
+                      <!-- font やさしさゴシックボールド -->
+                      <ruby>
+                        <span class="kanji name-blue font-bold">
+                          <span class="first">皆川</span>
+                          <span class="last">翠</span>
+                        </span>
+                        <rt class="hira name-blue-deep">
+                          <span class="first">みなかわ</span>
+                          <span class="last">すい</span>
+                        </rt>
+                        <rt class="rome name-blue-deep">
+                          Sui Minakawa
+                        </rt>
+                      </ruby>
+                    </div>
+                  </div>
+                  <div class="character_desc text--sm name-blue-deep font-bold">
+                    <p>
+                      学園の２年生で水泳少女。春先に山道から落ちる事故に遭い、足に怪我を負っている。いつもの夏なら元気に沢で泳いでいるのだが、今年は泳げなくて残念がっている。<br>
+                      活発で明るい性格だが、仲間内では一番臆病な、女の子らしい女の子。年上の兄姉ばかりの家庭で育ったせいで、耳歳増なところがある。<br>
+                      今まで周囲にいなかった同年代の異性である森羅に強い興味をもつ。
+                    </p>
                   </div>
                 </div>
-                <script>
-                  const images = document.querySelectorAll(".image-list img");
-                  const modals = document.querySelectorAll(".modal");
-                  const closeButtons = document.querySelectorAll(".close-btn");
-
-                  images.forEach(img => {
-                    img.addEventListener("click", () => {
-                        const modalId = img.dataset.modalId;
-                        const targetModal = document.getElementById(modalId);
-                        openModal(targetModal);
-                    });
-                    img.addEventListener("keydown", event => {
-                      if (event.key === "Enter") {
-                        const modalId = img.dataset.modalId;
-                        const targetModal = document.getElementById(modalId);
-                        openModal(targetModal);
-                      }
-                    });
-                  });
-
-                closeButtons.forEach(btn => {
-                  btn.addEventListener("click", () => {
-                    const targetModal = btn.closest(".modal");
-                    closeModal(targetModal);
-                  });
-                  btn.addEventListener("keydown", event => {
-                    if (event.key === "Enter") {
-                      const targetModal = btn.closest(".modal");
-                      closeModal(targetModal);
-                    }
-                  });
-                });
-
-                modals.forEach(modal => {
-                  modal.addEventListener("click", event => {
-                    if (event.target === modal || event.target.closest(".close-btn")) {
-                      closeModal(modal);
-                    }
-                  });
-                });
-
-                document.addEventListener("keydown", event => {
-                  if (event.key === "Escape") {
-                    modals.forEach(modal => {
-                      if (modal.style.display === "block") {
-                        closeModal(modal);
-                      }
-                    });
-                  }
-                });
-
-                function openModal(modal) {
-                modal.style.display = "block";
-                }
-
-                function closeModal(modal) {
-                modal.style.display = "none";
-                }
-                </script>
-
-
+                <div class="character_rough">
+                  <img src="./assets/character/sui/sui_rough.jpg" alt="皆川翠のラフ画" width="277" height="188">
+                </div>
               </div>
-
-              
+              <div class="voice-sample text-sm">
+                <p class="font-bold">
+                  <span class="before-arrow-right--double-lightblue">
+                    [ <span class="blue-light">ボイスサンプル</span>｜cv. 立花あおい ] 
+                  </span>
+                </p>
+                <ul class="sample-list">
+                  <li>
+                    <div id="sui-sample-1">
+                      <figure>
+                        <figcaption class="font-bold">サンプル1</figcaption>
+                        <audio controls src="./assets/audio/sui/sui1.mp3">
+                          <a href="./assets/audio/sui/sui1.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="sui-sample-2">
+                      <figure>
+                        <figcaption class="font-bold">サンプル2</figcaption>
+                        <audio controls src="./assets/audio/sui/sui2.mp3">
+                          <a href="./assets/audio/sui/sui2.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                  <li>
+                    <div id="sui-sample-3">
+                      <figure>
+                        <figcaption class="font-bold">サンプル3</figcaption>
+                        <audio controls src="./assets/audio/sui/sui3.mp3">
+                          <a href="./assets/audio/sui/sui3.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="sui-sample-4">
+                      <figure>
+                        <figcaption class="font-bold">サンプル4</figcaption>
+                        <audio controls src="./assets/audio/sui/sui4.mp3">
+                          <a href="./assets/audio/sui/sui4.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                </ul>
+              </div>
+              <div class="cg-sample">
+                <div class="flex">
+                  <p class="font-bold">
+                    <span class="before-arrow-right--double-lightblue">
+                      [ <span class="blue-light">CGサンプル</span> ] 
+                    </span>
+                  </p>
+                  <p class="pad-left--1ch">
+                    サムネイルをクリックすると画像を拡大して、ご覧頂けます
+                  </p>
+                </div>
+                <div class="thumbs-list">
+                  <img src="./assets/character/sui/sui-cg1_sm.jpg" alt="こちらを覗き込む翠ちゃん" width="122" height="69">
+                  <img src="./assets/character/sui/sui-cg2_sm.jpg" alt="こちらに笑顔を向ける翠翠ちゃん" width="122" height="69">
+                  <img src="./assets/character/sui/sui-cg3_sm.jpg" alt="アイスを片手に話す翠ちゃん" width="122" height="69">
+                  <img src="./assets/character/sui/sui-cg4_sm.jpg" alt="色々と濡れ濡れな翠ちゃん" width="122" height="69">
+                </div>
+              </div>              
             </section>
+            <hr>
+            <section class="character" id="ayame">
+              <div class="header">
+                <img  class="width-100" src="./assets/character/ayame/ayame_header.jpg" alt="日差しを浴びながら図書館で本を読むあやめちゃん" width="490" height="251">
+                <p class="name-blue font-bold">お、おっぱいは関係ないですよ！？</p>
+              </div>
+              <div class="grid">
+                <div class="character_image">
+                  <img src="./assets/character/ayame/ayame.png" alt="菱田あやめ" width="216" height="454">
+                </div>
+                <div class="character_details">
+                  <div class="flex-end">
+                    <div class="name">
+                      <!-- font やさしさゴシックボールド -->
+                      <ruby>
+                        <span class="kanji name-blue font-bold">
+                          <span class="first">菱田</span>
+                          <span class="last">あやめ</span>
+                        </span>
+                        <rt class="hira name-blue-deep">
+                          <span class="first">ひしだ</span>
+                          <span class="last">あやめ</span>
+                        </rt>
+                        <rt class="rome name-blue-deep">
+                          Ayame Hishida
+                        </rt>
+                      </ruby>
+                    </div>
+                  </div>
+                  <div class="character_desc text--sm name-blue-deep font-bold">
+                    <p>
+                      学園の３年生で文学少女。ヒロインたちの中では最年長で、沢渡透香と一緒に他のメンバーの授業の面倒を見ている。<br>
+                      箱庭のような村の箱入り娘であったため世間に疎い。かなりの天然ボケかつ素直な性格で、喜怒哀楽によってころころと表情を変える。<br>
+                      半年前、交通事故で両親を亡くし－同乗していたあやめは、目の前で両親が死んでいくのを目にして心の傷を負っている。
+                    </p>
+                  </div>
+                </div>
+                <div class="character_rough">
+                  <img src="./assets/character/ayame/ayame_rough.jpg" alt="菱田あやめのラフ画" width="277" height="188">
+                </div>
+              </div>
+              <div class="voice-sample text-sm">
+                <p class="font-bold">
+                  <span class="before-arrow-right--double-lightblue">
+                    [ <span class="blue-light">ボイスサンプル</span>｜cv. 桜井美鈴 ] 
+                  </span>
+                </p>
+                <ul class="sample-list">
+                  <li>
+                    <div id="ayame-sample-1">
+                      <figure>
+                        <figcaption class="font-bold">サンプル1</figcaption>
+                        <audio controls src="./assets/audio/ayame/ayame1.mp3">
+                          <a href="./assets/audio/ayame/ayame.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ayame-sample-2">
+                      <figure>
+                        <figcaption class="font-bold">サンプル2</figcaption>
+                        <audio controls src="./assets/audio/ayame/ayame2.mp3">
+                          <a href="./assets/audio/ayame/ayame2.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                  <li>
+                    <div id="ayame-sample-3">
+                      <figure>
+                        <figcaption class="font-bold">サンプル3</figcaption>
+                        <audio controls src="./assets/audio/ayame/ayame3.mp3">
+                          <a href="./assets/audio/ayame/ayame3.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ayame-sample-4">
+                      <figure>
+                        <figcaption class="font-bold">サンプル4</figcaption>
+                        <audio controls src="./assets/audio/ayame/ayame4.mp3">
+                          <a href="./assets/audio/ayame/ayame4.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                </ul>
+              </div>
+              <div class="cg-sample">
+                <div class="flex">
+                  <p class="font-bold">
+                    <span class="before-arrow-right--double-lightblue">
+                      [ <span class="blue-light">CGサンプル</span> ] 
+                    </span>
+                  </p>
+                  <p class="pad-left--1ch">
+                    サムネイルをクリックすると画像を拡大して、ご覧頂けます
+                  </p>
+                </div>
+                <div class="thumbs-list">
+                  <img src="./assets/character/ayame/ayame-cg1_sm.jpg" alt="微笑むあやめちゃん" width="122" height="69">
+                  <img src="./assets/character/ayame/ayame-cg2_sm.jpg" alt="転んだ勢いで上に乗っかって来るあやめちゃん" width="122" height="69">
+                  <img src="./assets/character/ayame/ayame-cg3_sm.jpg" alt="スカートを引いてパンツを見せてくるあやめちゃん" width="122" height="69">
+                  <img src="./assets/character/ayame/ayame-cg4_sm.jpg" alt="えっちなことをするあやめちゃん" width="122" height="69">
+                </div>
+              </div>              
+            </section>
+            <hr>
+            <section class="character" id="ayame">
+              <div class="header">
+                <img  class="width-100" src="./assets/character/tohka/tohka_header.jpg" alt="星空を儚げに見上げる透香ちゃん" width="490" height="251">
+                <p class="name-blue font-bold">似てるみたいですね、私たち</p>
+              </div>
+              <div class="grid">
+                <div class="character_image">
+                  <img src="./assets/character/tohka/tohka.png" alt="沢渡透香" width="216" height="454">
+                </div>
+                <div class="character_details">
+                  <div class="flex-end">
+                    <div class="name">
+                      <!-- font やさしさゴシックボールド -->
+                      <ruby>
+                        <span class="kanji name-blue font-bold">
+                          <span class="first">沢渡</span>
+                          <span class="last">透香</span>
+                        </span>
+                        <rt class="hira name-blue-deep">
+                          <span class="first">さわたり</span>
+                          <span class="last">とうか</span>
+                        </rt>
+                        <rt class="rome name-blue-deep">
+                          Tohka Sawatari
+                        </rt>
+                      </ruby>
+                    </div>
+                  </div>
+                  <div class="character_desc text--sm name-blue-deep font-bold">
+                    <p>
+                      学園の２年生で天文部。<br>
+                      不治の病を抱えている。この夏は超えられないだろうと言われていて、最後の思い出作りに無理を言って学園に通っている。<br>
+                      "良い子"を体現したような性格だが、はかなげな外見に見合わない天真爛漫な明るさをもつ。公開の内容に生きようとしているので、言いたいことは言うし、やりたいことはやる。<br>
+                      いたいことは言うし、やりたいことはやる。<br>
+                      まっすぐな少女。
+                    </p>
+                  </div>
+                </div>
+                <div class="character_rough">
+                  <img src="./assets/character/tohka/tohka_rough.jpg" alt="沢渡透香のラフ画" width="277" height="188">
+                </div>
+              </div>
+              <div class="voice-sample text-sm">
+                <p class="font-bold">
+                  <span class="before-arrow-right--double-lightblue">
+                    [ <span class="blue-light">ボイスサンプル</span>｜cv. 市川ひなこ ] 
+                  </span>
+                </p>
+                <ul class="sample-list">
+                  <li>
+                    <div id="ren-sample-1">
+                      <figure>
+                        <figcaption class="font-bold">サンプル1</figcaption>
+                        <audio controls src="./assets/audio/tohka/tohka1.mp3">
+                          <a href="./assets/audio/tohka/tohka.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ren-sample-2">
+                      <figure>
+                        <figcaption class="font-bold">サンプル2</figcaption>
+                        <audio controls src="./assets/audio/tohka/tohka2.mp3">
+                          <a href="./assets/audio/tohka/tohka2.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                  <li>
+                    <div id="ren-sample-3">
+                      <figure>
+                        <figcaption class="font-bold">サンプル3</figcaption>
+                        <audio controls src="./assets/audio/tohka/tohka3.mp3">
+                          <a href="./assets/audio/tohka/tohka.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="ren-sample-4">
+                      <figure>
+                        <figcaption class="font-bold">サンプル4</figcaption>
+                        <audio controls src="./assets/audio/tohka/tohka4.mp3">
+                          <a href="./assets/audio/tohka/tohka4.mp3">
+                            Download audio
+                          </a>
+                        </audio>
+                      </figure>
+                    </div>    
+                  </li>
+                </ul>
+              </div>
+              <div class="cg-sample">
+                <div class="flex">
+                  <p class="font-bold">
+                    <span class="before-arrow-right--double-lightblue">
+                      [ <span class="blue-light">CGサンプル</span> ] 
+                    </span>
+                  </p>
+                  <p class="pad-left--1ch">
+                    サムネイルをクリックすると画像を拡大して、ご覧頂けます
+                  </p>
+                </div>
+                <div class="thumbs-list">
+                  <img src="./assets/character/tohka/tohka-cg1_sm.jpg" alt="たくさんの向日葵を抱える透香ちゃん" width="122" height="69">
+                  <img src="./assets/character/tohka/tohka-cg2_sm.jpg" alt="拗ねた顔をする透香ちゃん" width="122" height="69">
+                  <img src="./assets/character/tohka/tohka-cg3_sm.jpg" alt="星空を背景に真剣に睨んでくる透香ちゃん" width="122" height="69">
+                  <img src="./assets/character/tohka/tohka-cg4_sm.jpg" alt="えっちなことをする透香ちゃん" width="122" height="69">
+                </div>
+              </div>              
+            </section>
+            <hr>
           </article>
         </div>
 

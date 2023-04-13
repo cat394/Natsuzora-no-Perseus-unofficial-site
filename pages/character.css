@@ -9,10 +9,14 @@
 }
 
 
-#character .thumbs-list {
-  display: flex;
-  flex-wrap: wrap;
+.thumbs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
   gap: 5px;
+}
+
+.thumbs-list img {
+  width: 100%;
 }
 
 ruby {
@@ -95,6 +99,8 @@ rt {
   margin-bottom: 1em;
 }
 
-.image-list {
-  
+@media (max-width: 1186px) {
+  .character .grid {
+    display: block;
+  }
 }
